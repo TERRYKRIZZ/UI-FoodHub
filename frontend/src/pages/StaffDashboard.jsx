@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./StaffDashboard.css";
 
 function StaffDashboard({ orders, onBackToMenu, onUpdateOrder }) {
@@ -82,7 +82,12 @@ const [recipes] = useState([
   },
 ]);
 
-  const [inventory, setInventory] = useState([
+  const [inventory, setInventory] = useState(() => {
+  const savedInventory = localStorage.getItem("uiFoodHubInventory");
+
+  return savedInventory
+    ? JSON.parse(savedInventory)
+    : [
   {
     id: 1,
     name: "Rice",
@@ -124,8 +129,15 @@ const [recipes] = useState([
     category: "Vegetables",
     quantity: 5,
     unit: "kg",
-  },
-]);
+    },
+];
+});
+useEffect(() => {
+  localStorage.setItem(
+    "uiFoodHubInventory",
+    JSON.stringify(inventory)
+  );
+}, [inventory]);
 
    const updateInventory = (id) => {
   const newQuantity = prompt("Enter new quantity:");

@@ -85,6 +85,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
   margin-bottom: 25px;
 }
 
@@ -399,6 +400,10 @@
 /* RECIPE RESPONSIVE */
 
 @media (max-width: 800px) {
+
+  .section-title {
+  flex-wrap: wrap;
+}
   .recipe-list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -438,12 +443,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 12px;
     padding: 18px 10px;
-  }
-
-  .table-row > span:nth-child(3),
-  .table-row > span:nth-child(5),
-  .table-row > span:nth-child(6) {
-    display: none;
   }
 
   .table-row strong {

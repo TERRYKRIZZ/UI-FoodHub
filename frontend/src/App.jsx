@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Menu from "./pages/Menu";
 import Checkout from "./pages/Checkout";
 import OrderConfirmation from "./pages/OrderConfirmation";
@@ -12,7 +12,17 @@ function App() {
   const [page, setPage] = useState("home");
   const [cart, setCart] = useState([]);
   const [order, setOrder] = useState(null);
-  const [orders, setOrders] = useState([]);
+  const [orders, setOrders] = useState(() => {
+  const savedOrders = localStorage.getItem("uiFoodHubOrders");
+  return savedOrders ? JSON.parse(savedOrders) : [];
+});
+ useEffect(() => {
+  localStorage.setItem("uiFoodHubOrders", JSON.stringify(orders));
+}, [orders]);
+
+useEffect(() => {
+  localStorage.setItem("uiFoodHubOrders", JSON.stringify(orders));
+}, [orders]);
 
   const cartCount = cart.reduce(
   (total, item) => total + item.quantity,
