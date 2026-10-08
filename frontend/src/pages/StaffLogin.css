@@ -1,0 +1,115 @@
+.staff-login-page {
+  min-height: 100vh;
+  background: #fff8f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.staff-login-card {
+  width: 100%;
+  max-width: 430px;
+  background: white;
+  border: 1px solid #f0dfd2;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.staff-login-logo {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #fff0e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.staff-login-label {
+  margin: 0 0 8px;
+  color: #e85d04;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.staff-login-card h1 {
+  margin: 0;
+  color: #082b59;
+  font-size: 32px;
+}
+
+.staff-login-description {
+  color: #60708a;
+  font-size: 14px;
+  margin: 10px 0 30px;
+}
+
+.staff-form-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.staff-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #082b59;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.staff-form-group input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  font-size: 14px;
+  outline: none;
+}
+
+.staff-form-group input:focus {
+  border-color: #e85d04;
+}
+
+.staff-login-button {
+  width: 100%;
+  border: none;
+  background: #e85d04;
+  color: white;
+  padding: 14px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.staff-login-button:hover {
+  opacity: 0.9;
+}
+
+.staff-back-button {
+  margin-top: 18px;
+  border: none;
+  background: transparent;
+  color: #082b59;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.staff-back-button:hover {
+  text-decoration: underline;
+}
+
+.staff-demo-text {
+  margin-top: 25px;
+  padding-top: 18px;
+  border-top: 1px solid #eee;
+  color: #888;
+  font-size: 11px;
+}

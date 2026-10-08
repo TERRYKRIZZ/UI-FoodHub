@@ -1,0 +1,278 @@
+/* =========================================
+   UI FOODHUB - CHECKOUT PAGE
+   ========================================= */
+
+.checkout-page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(232, 93, 0, 0.06),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 90% 30%,
+      rgba(20, 33, 61, 0.05),
+      transparent 30%
+    ),
+    #fffaf5;
+  color: #14213d;
+}
+
+/* Header */
+
+.checkout-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.checkout-header span {
+  color: #e85d00;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.checkout-header h1 {
+  margin: 10px 0;
+  font-size: 42px;
+  font-weight: 700;
+  color: #14213d;
+}
+
+.checkout-header p {
+  margin: 0;
+  color: #667085;
+  font-size: 16px;
+}
+
+/* Main layout */
+
+.checkout-container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* Cards */
+
+.checkout-form,
+.order-summary {
+  background: #ffffff;
+  border: 1px solid rgba(20, 33, 61, 0.07);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(20, 33, 61, 0.08);
+}
+
+.checkout-form h2,
+.order-summary h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #14213d;
+  font-size: 23px;
+}
+
+/* Form */
+
+.checkout-form label {
+  display: block;
+  margin: 17px 0 7px;
+  color: #344054;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.checkout-form input,
+.checkout-form select {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  border: 1px solid #d9dde3;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #14213d;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.checkout-form input:focus,
+.checkout-form select:focus {
+  border-color: #e85d00;
+  box-shadow: 0 0 0 3px rgba(232, 93, 0, 0.10);
+}
+
+/* Place order */
+
+.place-order-button {
+  width: 100%;
+  height: 50px;
+  margin-top: 28px;
+  border: none;
+  border-radius: 10px;
+  background: #e85d00;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.place-order-button:hover {
+  background: #cf5000;
+  transform: translateY(-1px);
+}
+
+/* Back button */
+
+.back-button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  color: #667085;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  color: #e85d00;
+}
+
+/* Order summary */
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.summary-item h3 {
+  margin: 0 0 5px;
+  color: #14213d;
+  font-size: 16px;
+}
+
+.summary-item p {
+  margin: 0;
+  color: #667085;
+  font-size: 14px;
+}
+
+.summary-item strong {
+  color: #e85d00;
+  white-space: nowrap;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 2px solid #14213d;
+  font-size: 18px;
+}
+
+.summary-total strong {
+  color: #e85d00;
+  font-size: 22px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .checkout-page {
+    padding: 35px 15px;
+  }
+
+  .checkout-header h1 {
+    font-size: 34px;
+  }
+
+  .checkout-container {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-form,
+  .order-summary {
+    padding: 22px;
+  }
+}
+/* BANK TRANSFER */
+
+.bank-transfer-box {
+  background: #fffaf5;
+  border: 1px solid #f0dfd2;
+  border-radius: 12px;
+  padding: 18px;
+  margin-top: 18px;
+}
+
+.bank-transfer-box h3 {
+  margin: 0 0 8px;
+  color: #082b59;
+  font-size: 16px;
+}
+
+.bank-transfer-box > p {
+  margin: 0 0 15px;
+  color: #60708a;
+  font-size: 12px;
+}
+
+.bank-details {
+  display: grid;
+  gap: 10px;
+}
+
+.bank-details div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 9px 0;
+  border-bottom: 1px solid #f0dfd2;
+}
+
+.bank-details div:last-child {
+  border-bottom: none;
+}
+
+.bank-details span {
+  color: #60708a;
+  font-size: 12px;
+}
+
+.bank-details strong {
+  color: #082b59;
+  font-size: 12px;
+  text-align: right;
+}
+
+.transfer-confirmation {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+  color: #082b59;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.transfer-confirmation input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
