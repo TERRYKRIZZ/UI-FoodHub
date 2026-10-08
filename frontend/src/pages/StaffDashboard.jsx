@@ -214,8 +214,9 @@ return (
     </p>
   </div>
 
-  <span>{totalOrders} orders</span>
-</div>
+<span>
+  {totalOrders} {totalOrders === 1 ? "order" : "orders"}
+</span></div>
 
         {orders.length === 0 ? (
           <div className="no-orders">
