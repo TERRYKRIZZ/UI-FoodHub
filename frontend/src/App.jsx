@@ -154,7 +154,7 @@ useEffect(() => {
 
             <div className="hero-food">
   <img
-    src="/image/hero-foodhub.png"
+    src="/image/hero-foodhub.webp"
     alt="Delicious Jollof Rice with Chicken"
   />
 </div>
@@ -174,7 +174,7 @@ useEffect(() => {
               <div className="food-card">
                 <div className="food-image">
   <img
-    src="/image/jollof-rice.png"
+    src="/image/jollof-rice.webp"
     alt="Jollof Rice"
   />
 </div>
@@ -193,7 +193,7 @@ useEffect(() => {
       name: "Jollof Rice",
       description: "Delicious Nigerian jollof rice served fresh.",
       price: 1500,
-      image: "/image/jollof-rice.png",
+      image: "/image/jollof-rice.webp",
     })
   }
 >
@@ -208,7 +208,7 @@ useEffect(() => {
               <div className="food-card">
                 <div className="food-image">
   <img
-    src="/image/chips-chicken.png"
+    src="/image/chips-chicken.webp"
     alt="Chips & Chicken"
   />
 </div>
@@ -227,7 +227,7 @@ useEffect(() => {
         name: "Chips & Chicken",
         description: "Crispy chips served with seasoned chicken.",
         price: 2200,
-        image: "/image/chips-chicken.png",
+        image: "/image/chips-chicken.webp",
       })
     }
   >
@@ -242,7 +242,7 @@ useEffect(() => {
               <div className="food-card">
                 <div className="food-image">
   <img
-    src="/image/spaghetti.png"
+    src="/image/spaghetti.webp"
     alt="Spaghetti"
   />
 </div>
@@ -261,7 +261,7 @@ useEffect(() => {
         name: "Spaghetti",
         description: "Tasty spaghetti prepared with special sauce.",
         price: 1800,
-        image: "/image/spaghetti.png",
+        image: "/image/spaghetti.webp",
       })
     }
   >

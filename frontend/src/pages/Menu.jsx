@@ -8,14 +8,14 @@ const meals = [
   description: 'Delicious Nigerian jollof rice served fresh.',
   price: 1500,
   category: "Rice",
-  image: '/image/jollof-rice.png',
+  image: '/image/jollof-rice.webp',
 },
   {
   id: 2,
   name: "Fried Rice & Chicken",
   description: "Tasty fried rice served with crispy chicken.",
   price: 2000,
-  image: '/image/fried-rice-chicken.png',
+  image: '/image/fried-rice-chicken.webp',
   category: "Chicken",
 },
   {
@@ -23,7 +23,7 @@ const meals = [
   name: "Spaghetti",
   description: "Tasty spaghetti prepared with special sauce.",
   price: 1800,
-  image: '/image/spaghetti.png',
+  image: '/image/spaghetti.webp',
   category: "Pasta",
 },
  {
@@ -31,7 +31,7 @@ const meals = [
   name: "Rice & Beans",
   description: "A delicious combination of rice and beans.",
   price: 1600,
-  image: '/image/rice-beans.png',
+  image: '/image/rice-beans.webp',
   category: "Rice",
 },
   {
@@ -39,7 +39,7 @@ const meals = [
   name: "Chips & Chicken",
   description: "Crispy chips served with seasoned chicken.",
   price: 2200,
-  image: '/image/chips-chicken.png',
+  image: '/image/chips-chicken.webp',
   category: "Chicken",
 },
   {
@@ -47,7 +47,7 @@ const meals = [
   name: "Moi Moi",
   description: "Freshly prepared Nigerian steamed bean pudding.",
   price: 1000,
-  image: '/image/moi-moi.png',
+  image: '/image/moi-moi.webp',
   category: "Snacks",
 },
 ];
